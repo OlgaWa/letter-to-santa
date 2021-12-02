@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<!--
+	Astral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Your letter to Santa</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		{% load static %}
+		<link rel="stylesheet" href="{% static 'css/main.css' %}">
+		<noscript><link rel="stylesheet" href="{% static 'css/noscript.css' %}"></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper-->
+			<div id="wrapper" style="opacity:100">
+
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="/" class="icon solid fa-home"><span>Home</span></a>
+						<a href="/letter" class="icon solid fa-pencil-alt"><span>Write a letter</span></a>
+						<a href="/letters" class="icon solid fa-envelope"><span>See the letters</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Contact -->
+							<article id="home" class="panel">
+								<header>
+									<h1>Your letter to Santa Claus</h1>
+								</header>
+								<h2>{{ christmasletter.title }}</h2>
+								<p>{{ christmasletter.content|linebreaks|safe }}</p>
+								<h2>{{ christmasletter.signature }}</h2>
+								<form action= {{ link }} >
+									<input type="submit" value="Download PDF" />
+								</form>
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>&copy; Untitled. All rights reserved. </li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../static/js/jquery.min.js"></script>
+			<script src="../static/js/browser.min.js"></script>
+			<script src="../static/js/breakpoints.min.js"></script>
+			<script src="../static/js/util.js"></script>
+			<script src="../static/js/main.js"></script>
+
+	</body>
+</html>

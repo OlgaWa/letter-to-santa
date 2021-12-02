@@ -1,0 +1,11 @@
+# Ignore files related to API keys and personal info
+.env
+
+# Ignore Pycharm and Python files
+.idea/
+venv/
+__pycache__/
+
+# Ignore folders
+letters_pdf/
+webfonts/
