@@ -1,0 +1,5 @@
+Django~=3.2.9
+fpdf~=1.7.2
+python-dotenv~=0.19.2
+filestack-python~=3.5.0
+
