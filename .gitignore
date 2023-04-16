@@ -1,7 +1,7 @@
 # Ignore files related to API keys and personal info
 .env
 
-# Ignore Pycharm and Python files
+# Ignore virtual env and Python files
 .idea/
 venv/
 __pycache__/
